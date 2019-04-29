@@ -3,7 +3,7 @@
 	// Token: 0x02000003 RID: 3
 	public partial class Minner : global::System.Windows.Forms.Form
 	{
-		// Token: 0x06000029 RID: 41 RVA: 0x00003A13 File Offset: 0x00001C13
+		// Token: 0x0600002B RID: 43 RVA: 0x000039D4 File Offset: 0x00001BD4
 		protected override void Dispose(bool disposing)
 		{
 			if (disposing && this.components != null)
@@ -13,7 +13,7 @@
 			base.Dispose(disposing);
 		}
 
-		// Token: 0x0600002A RID: 42 RVA: 0x00003A34 File Offset: 0x00001C34
+		// Token: 0x0600002C RID: 44 RVA: 0x000039F4 File Offset: 0x00001BF4
 		private void InitializeComponent()
 		{
 			this.components = new global::System.ComponentModel.Container();
@@ -37,11 +37,10 @@
 			this.label9 = new global::System.Windows.Forms.Label();
 			this.label10 = new global::System.Windows.Forms.Label();
 			this.label11 = new global::System.Windows.Forms.Label();
-			this.label13 = new global::System.Windows.Forms.Label();
-			this.textBox1 = new global::System.Windows.Forms.TextBox();
 			this.label12 = new global::System.Windows.Forms.Label();
 			this.pictureBox1 = new global::System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new global::System.Windows.Forms.PictureBox();
+			this.label7 = new global::System.Windows.Forms.Label();
 			((global::System.ComponentModel.ISupportInitialize)this.pictureBox1).BeginInit();
 			((global::System.ComponentModel.ISupportInitialize)this.pictureBox3).BeginInit();
 			base.SuspendLayout();
@@ -194,6 +193,7 @@
 			this.label9.Size = new global::System.Drawing.Size(241, 35);
 			this.label9.TabIndex = 35;
 			this.label9.Text = " www.Rnocoin.com ";
+			this.label9.Click += new global::System.EventHandler(this.label9_Click);
 			this.label10.AutoSize = true;
 			this.label10.Font = new global::System.Drawing.Font("맑은 고딕", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 129);
 			this.label10.ForeColor = global::System.Drawing.SystemColors.ControlDarkDark;
@@ -213,24 +213,6 @@
 			this.label11.TabIndex = 36;
 			this.label11.Text = "Pc Hashrate";
 			this.label11.Click += new global::System.EventHandler(this.label11_Click);
-			this.label13.AutoSize = true;
-			this.label13.Font = new global::System.Drawing.Font("맑은 고딕", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 129);
-			this.label13.ForeColor = global::System.Drawing.SystemColors.ControlDarkDark;
-			this.label13.Location = new global::System.Drawing.Point(587, 503);
-			this.label13.Margin = new global::System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label13.Name = "label13";
-			this.label13.Size = new global::System.Drawing.Size(139, 32);
-			this.label13.TabIndex = 39;
-			this.label13.Text = "Hash String";
-			this.label13.Visible = false;
-			this.textBox1.Font = new global::System.Drawing.Font("Segoe UI", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
-			this.textBox1.Location = new global::System.Drawing.Point(591, 538);
-			this.textBox1.Margin = new global::System.Windows.Forms.Padding(4);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ReadOnly = true;
-			this.textBox1.Size = new global::System.Drawing.Size(489, 39);
-			this.textBox1.TabIndex = 40;
-			this.textBox1.Visible = false;
 			this.label12.AutoSize = true;
 			this.label12.BackColor = global::System.Drawing.Color.Transparent;
 			this.label12.Cursor = global::System.Windows.Forms.Cursors.Hand;
@@ -263,13 +245,24 @@
 			this.pictureBox3.TabIndex = 31;
 			this.pictureBox3.TabStop = false;
 			this.pictureBox3.Click += new global::System.EventHandler(this.pictureBox3_Click_1);
+			this.label7.AutoSize = true;
+			this.label7.BackColor = global::System.Drawing.Color.Transparent;
+			this.label7.Cursor = global::System.Windows.Forms.Cursors.Hand;
+			this.label7.Font = new global::System.Drawing.Font("Segoe UI Emoji", 9.75f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
+			this.label7.ForeColor = global::System.Drawing.Color.Black;
+			this.label7.Location = new global::System.Drawing.Point(584, 535);
+			this.label7.Margin = new global::System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label7.Name = "label7";
+			this.label7.Size = new global::System.Drawing.Size(336, 35);
+			this.label7.TabIndex = 42;
+			this.label7.Text = "알노코인 공식 카페 바로가기";
+			this.label7.Click += new global::System.EventHandler(this.label7_Click);
 			base.AutoScaleDimensions = new global::System.Drawing.SizeF(13f, 24f);
 			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = global::System.Drawing.Color.White;
 			base.ClientSize = new global::System.Drawing.Size(1126, 687);
+			base.Controls.Add(this.label7);
 			base.Controls.Add(this.label12);
-			base.Controls.Add(this.textBox1);
-			base.Controls.Add(this.label13);
 			base.Controls.Add(this.label10);
 			base.Controls.Add(this.label11);
 			base.Controls.Add(this.label9);
@@ -370,15 +363,12 @@
 		private global::System.Windows.Forms.Label label11;
 
 		// Token: 0x0400003C RID: 60
-		private global::System.Windows.Forms.Label label13;
-
-		// Token: 0x0400003D RID: 61
-		private global::System.Windows.Forms.TextBox textBox1;
-
-		// Token: 0x0400003E RID: 62
 		private global::System.Windows.Forms.Label label12;
 
-		// Token: 0x0400003F RID: 63
+		// Token: 0x0400003D RID: 61
 		private global::System.Windows.Forms.PictureBox pictureBox1;
+
+		// Token: 0x0400003E RID: 62
+		private global::System.Windows.Forms.Label label7;
 	}
 }

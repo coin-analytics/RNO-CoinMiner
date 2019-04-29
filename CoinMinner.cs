@@ -158,7 +158,7 @@ namespace coinminner
 		}
 
 		// Token: 0x04000001 RID: 1
-		private string domain = "https://rnoapi.com";
+		private string domain = "http://rnoapi.com";
 
 		// Token: 0x04000002 RID: 2
 		private Point mousePoint;

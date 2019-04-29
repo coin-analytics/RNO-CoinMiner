@@ -11,7 +11,7 @@ namespace coinminner.Properties
 	internal sealed partial class Settings : ApplicationSettingsBase
 	{
 		// Token: 0x17000013 RID: 19
-		// (get) Token: 0x06000047 RID: 71 RVA: 0x00005270 File Offset: 0x00003470
+		// (get) Token: 0x06000049 RID: 73 RVA: 0x000051BC File Offset: 0x000033BC
 		public static Settings Default
 		{
 			get
@@ -20,7 +20,7 @@ namespace coinminner.Properties
 			}
 		}
 
-		// Token: 0x04000044 RID: 68
+		// Token: 0x04000043 RID: 67
 		private static Settings defaultInstance = (Settings)SettingsBase.Synchronized(new Settings());
 	}
 }

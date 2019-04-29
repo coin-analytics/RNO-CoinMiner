@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{62F5E7F2-7F7B-4E89-9AF3-564276AE6231}</ProjectGuid>
+    <ProjectGuid>{364CD4F1-C7CF-4867-80EB-61ECA4A06416}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>coinminner</RootNamespace>
     <AssemblyName>rnocoinminer</AssemblyName>

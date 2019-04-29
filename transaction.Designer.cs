@@ -3,7 +3,7 @@
 	// Token: 0x02000005 RID: 5
 	public partial class transaction : global::System.Windows.Forms.Form
 	{
-		// Token: 0x06000031 RID: 49 RVA: 0x00004EC7 File Offset: 0x000030C7
+		// Token: 0x06000033 RID: 51 RVA: 0x00004E13 File Offset: 0x00003013
 		protected override void Dispose(bool disposing)
 		{
 			if (disposing && this.components != null)
@@ -13,7 +13,7 @@
 			base.Dispose(disposing);
 		}
 
-		// Token: 0x06000032 RID: 50 RVA: 0x00004EE8 File Offset: 0x000030E8
+		// Token: 0x06000034 RID: 52 RVA: 0x00004E34 File Offset: 0x00003034
 		private void InitializeComponent()
 		{
 			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::coinminner.transaction));
@@ -44,10 +44,10 @@
 			base.PerformLayout();
 		}
 
-		// Token: 0x04000040 RID: 64
+		// Token: 0x0400003F RID: 63
 		private global::System.ComponentModel.IContainer components;
 
-		// Token: 0x04000041 RID: 65
+		// Token: 0x04000040 RID: 64
 		private global::System.Windows.Forms.TextBox LogBox;
 	}
 }

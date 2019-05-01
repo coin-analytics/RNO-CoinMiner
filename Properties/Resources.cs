@@ -15,13 +15,13 @@ namespace coinminner.Properties
 	[CompilerGenerated]
 	internal class Resources
 	{
-		// Token: 0x06000035 RID: 53 RVA: 0x00004FC9 File Offset: 0x000031C9
+		// Token: 0x06000035 RID: 53 RVA: 0x00004FC5 File Offset: 0x000031C5
 		internal Resources()
 		{
 		}
 
 		// Token: 0x17000001 RID: 1
-		// (get) Token: 0x06000036 RID: 54 RVA: 0x00004FD1 File Offset: 0x000031D1
+		// (get) Token: 0x06000036 RID: 54 RVA: 0x00004FCD File Offset: 0x000031CD
 		[EditorBrowsable(EditorBrowsableState.Advanced)]
 		internal static ResourceManager ResourceManager
 		{
@@ -36,8 +36,8 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000002 RID: 2
-		// (get) Token: 0x06000037 RID: 55 RVA: 0x00004FFD File Offset: 0x000031FD
-		// (set) Token: 0x06000038 RID: 56 RVA: 0x00005004 File Offset: 0x00003204
+		// (get) Token: 0x06000037 RID: 55 RVA: 0x00004FF9 File Offset: 0x000031F9
+		// (set) Token: 0x06000038 RID: 56 RVA: 0x00005000 File Offset: 0x00003200
 		[EditorBrowsable(EditorBrowsableState.Advanced)]
 		internal static CultureInfo Culture
 		{
@@ -52,7 +52,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000003 RID: 3
-		// (get) Token: 0x06000039 RID: 57 RVA: 0x0000500C File Offset: 0x0000320C
+		// (get) Token: 0x06000039 RID: 57 RVA: 0x00005008 File Offset: 0x00003208
 		internal static Bitmap bg
 		{
 			get
@@ -62,7 +62,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000004 RID: 4
-		// (get) Token: 0x0600003A RID: 58 RVA: 0x00005027 File Offset: 0x00003227
+		// (get) Token: 0x0600003A RID: 58 RVA: 0x00005023 File Offset: 0x00003223
 		internal static Bitmap bgg
 		{
 			get
@@ -72,7 +72,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000005 RID: 5
-		// (get) Token: 0x0600003B RID: 59 RVA: 0x00005042 File Offset: 0x00003242
+		// (get) Token: 0x0600003B RID: 59 RVA: 0x0000503E File Offset: 0x0000323E
 		internal static Bitmap bgg1
 		{
 			get
@@ -82,7 +82,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000006 RID: 6
-		// (get) Token: 0x0600003C RID: 60 RVA: 0x0000505D File Offset: 0x0000325D
+		// (get) Token: 0x0600003C RID: 60 RVA: 0x00005059 File Offset: 0x00003259
 		internal static Bitmap bgg2
 		{
 			get
@@ -92,7 +92,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000007 RID: 7
-		// (get) Token: 0x0600003D RID: 61 RVA: 0x00005078 File Offset: 0x00003278
+		// (get) Token: 0x0600003D RID: 61 RVA: 0x00005074 File Offset: 0x00003274
 		internal static Bitmap bgg3
 		{
 			get
@@ -102,7 +102,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000008 RID: 8
-		// (get) Token: 0x0600003E RID: 62 RVA: 0x00005093 File Offset: 0x00003293
+		// (get) Token: 0x0600003E RID: 62 RVA: 0x0000508F File Offset: 0x0000328F
 		internal static Bitmap closeBtn
 		{
 			get
@@ -112,7 +112,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000009 RID: 9
-		// (get) Token: 0x0600003F RID: 63 RVA: 0x000050AE File Offset: 0x000032AE
+		// (get) Token: 0x0600003F RID: 63 RVA: 0x000050AA File Offset: 0x000032AA
 		internal static Bitmap closeBtn1
 		{
 			get
@@ -122,7 +122,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x1700000A RID: 10
-		// (get) Token: 0x06000040 RID: 64 RVA: 0x000050C9 File Offset: 0x000032C9
+		// (get) Token: 0x06000040 RID: 64 RVA: 0x000050C5 File Offset: 0x000032C5
 		internal static Bitmap h1
 		{
 			get
@@ -132,7 +132,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x1700000B RID: 11
-		// (get) Token: 0x06000041 RID: 65 RVA: 0x000050E4 File Offset: 0x000032E4
+		// (get) Token: 0x06000041 RID: 65 RVA: 0x000050E0 File Offset: 0x000032E0
 		internal static Bitmap KakaoTalk_20190422_191453358
 		{
 			get
@@ -142,7 +142,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x1700000C RID: 12
-		// (get) Token: 0x06000042 RID: 66 RVA: 0x000050FF File Offset: 0x000032FF
+		// (get) Token: 0x06000042 RID: 66 RVA: 0x000050FB File Offset: 0x000032FB
 		internal static Bitmap KakaoTalk_20190422_192723142
 		{
 			get
@@ -152,7 +152,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x1700000D RID: 13
-		// (get) Token: 0x06000043 RID: 67 RVA: 0x0000511A File Offset: 0x0000331A
+		// (get) Token: 0x06000043 RID: 67 RVA: 0x00005116 File Offset: 0x00003316
 		internal static Bitmap KakaoTalk_20190422_203135019
 		{
 			get
@@ -162,7 +162,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x1700000E RID: 14
-		// (get) Token: 0x06000044 RID: 68 RVA: 0x00005135 File Offset: 0x00003335
+		// (get) Token: 0x06000044 RID: 68 RVA: 0x00005131 File Offset: 0x00003331
 		internal static Bitmap KakaoTalk_20190422_203538381
 		{
 			get
@@ -172,7 +172,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x1700000F RID: 15
-		// (get) Token: 0x06000045 RID: 69 RVA: 0x00005150 File Offset: 0x00003350
+		// (get) Token: 0x06000045 RID: 69 RVA: 0x0000514C File Offset: 0x0000334C
 		internal static Bitmap KakaoTalk_20190422_213551232
 		{
 			get
@@ -182,7 +182,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000010 RID: 16
-		// (get) Token: 0x06000046 RID: 70 RVA: 0x0000516B File Offset: 0x0000336B
+		// (get) Token: 0x06000046 RID: 70 RVA: 0x00005167 File Offset: 0x00003367
 		internal static Bitmap mbg
 		{
 			get
@@ -192,7 +192,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000011 RID: 17
-		// (get) Token: 0x06000047 RID: 71 RVA: 0x00005186 File Offset: 0x00003386
+		// (get) Token: 0x06000047 RID: 71 RVA: 0x00005182 File Offset: 0x00003382
 		internal static Bitmap roket
 		{
 			get
@@ -202,7 +202,7 @@ namespace coinminner.Properties
 		}
 
 		// Token: 0x17000012 RID: 18
-		// (get) Token: 0x06000048 RID: 72 RVA: 0x000051A1 File Offset: 0x000033A1
+		// (get) Token: 0x06000048 RID: 72 RVA: 0x0000519D File Offset: 0x0000339D
 		internal static Bitmap walletIco
 		{
 			get

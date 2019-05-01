@@ -49,10 +49,10 @@ namespace coinminner
 				Stream requestStream = httpWebRequest.GetRequestStream();
 				requestStream.Write(bytes, 0, bytes.Length);
 				requestStream.Close();
-				string text2 = new StreamReader(((HttpWebResponse)httpWebRequest.GetResponse()).GetResponseStream(), Encoding.Default).ReadToEnd();
-				if (JObject.Parse(text2)["result"].ToString() == "True")
+				string json = new StreamReader(((HttpWebResponse)httpWebRequest.GetResponse()).GetResponseStream(), Encoding.Default).ReadToEnd();
+				if (JObject.Parse(json)["result"].ToString() == "True")
 				{
-					this.walletInfo = JObject.Parse(text2);
+					this.walletInfo = JObject.Parse(json);
 					this.TotalHashRateLabel.Text = this.walletInfo["msg"]["totalHashRate"].ToString();
 					this.MiningLevelLabel.Text = this.walletInfo["msg"]["miningLevel"].ToString();
 					this.WeightLabel.Text = this.walletInfo["msg"]["weight"].ToString();
@@ -134,7 +134,6 @@ namespace coinminner
 				try
 				{
 					int num = this.nonce;
-					int num2 = this.nBits;
 					string value = this.nBitsStr;
 					string text = this.hashText;
 					string text2 = this.SHA256Hash(text + num);
@@ -180,17 +179,18 @@ namespace coinminner
 				catch (Exception)
 				{
 					this.runMinner = 1;
+					this.resetMinner();
 				}
 			}
 		}
 
-		// Token: 0x0600001A RID: 26 RVA: 0x00003784 File Offset: 0x00001984
+		// Token: 0x0600001A RID: 26 RVA: 0x00003780 File Offset: 0x00001980
 		public void updateMinedCoin(string coins)
 		{
 			this.minedCoin += double.Parse(coins);
 		}
 
-		// Token: 0x0600001B RID: 27 RVA: 0x0000379C File Offset: 0x0000199C
+		// Token: 0x0600001B RID: 27 RVA: 0x00003798 File Offset: 0x00001998
 		private void button1_Click(object sender, EventArgs e)
 		{
 			this.threadState = 1;
@@ -215,7 +215,7 @@ namespace coinminner
 			}
 		}
 
-		// Token: 0x0600001C RID: 28 RVA: 0x00003854 File Offset: 0x00001A54
+		// Token: 0x0600001C RID: 28 RVA: 0x00003850 File Offset: 0x00001A50
 		public void threadUp()
 		{
 			this.runMinner = 1;
@@ -230,7 +230,7 @@ namespace coinminner
 			}
 		}
 
-		// Token: 0x0600001D RID: 29 RVA: 0x000038D6 File Offset: 0x00001AD6
+		// Token: 0x0600001D RID: 29 RVA: 0x000038D2 File Offset: 0x00001AD2
 		public void resetMinner()
 		{
 			this.runMinner = 0;
@@ -238,7 +238,7 @@ namespace coinminner
 			this.threadUp();
 		}
 
-		// Token: 0x0600001E RID: 30 RVA: 0x000038EB File Offset: 0x00001AEB
+		// Token: 0x0600001E RID: 30 RVA: 0x000038E7 File Offset: 0x00001AE7
 		private void notifyIcon1_DoubleClick(object sender, EventArgs e)
 		{
 			base.Visible = true;
@@ -246,7 +246,7 @@ namespace coinminner
 			this.notifyIcon1.Visible = false;
 		}
 
-		// Token: 0x0600001F RID: 31 RVA: 0x00003907 File Offset: 0x00001B07
+		// Token: 0x0600001F RID: 31 RVA: 0x00003903 File Offset: 0x00001B03
 		private void button2_Click(object sender, EventArgs e)
 		{
 			base.Visible = false;
@@ -254,7 +254,7 @@ namespace coinminner
 			this.notifyIcon1.Visible = true;
 		}
 
-		// Token: 0x06000020 RID: 32 RVA: 0x00003923 File Offset: 0x00001B23
+		// Token: 0x06000020 RID: 32 RVA: 0x0000391F File Offset: 0x00001B1F
 		private void Minner_Resize(object sender, EventArgs e)
 		{
 			if (base.WindowState == FormWindowState.Minimized)
@@ -265,14 +265,14 @@ namespace coinminner
 			}
 		}
 
-		// Token: 0x06000021 RID: 33 RVA: 0x00003948 File Offset: 0x00001B48
+		// Token: 0x06000021 RID: 33 RVA: 0x00003944 File Offset: 0x00001B44
 		private void Minner_FormClosed(object sender, FormClosedEventArgs e)
 		{
 			this.threadState = 0;
 			Application.Exit();
 		}
 
-		// Token: 0x06000022 RID: 34 RVA: 0x00003956 File Offset: 0x00001B56
+		// Token: 0x06000022 RID: 34 RVA: 0x00003952 File Offset: 0x00001B52
 		private void pictureBox3_Click_1(object sender, EventArgs e)
 		{
 			if (!this.tsForm.IsDisposed)
@@ -282,7 +282,7 @@ namespace coinminner
 			Application.Exit();
 		}
 
-		// Token: 0x06000023 RID: 35 RVA: 0x00003975 File Offset: 0x00001B75
+		// Token: 0x06000023 RID: 35 RVA: 0x00003971 File Offset: 0x00001B71
 		private void button3_Click_1(object sender, EventArgs e)
 		{
 			this.threadState = 0;
@@ -292,40 +292,40 @@ namespace coinminner
 			this.button3.Visible = false;
 		}
 
-		// Token: 0x06000024 RID: 36 RVA: 0x000039A9 File Offset: 0x00001BA9
+		// Token: 0x06000024 RID: 36 RVA: 0x000039A5 File Offset: 0x00001BA5
 		private void label11_Click(object sender, EventArgs e)
 		{
 		}
 
-		// Token: 0x06000025 RID: 37 RVA: 0x000039AB File Offset: 0x00001BAB
+		// Token: 0x06000025 RID: 37 RVA: 0x000039A7 File Offset: 0x00001BA7
 		private void label12_Click(object sender, EventArgs e)
 		{
 		}
 
-		// Token: 0x06000026 RID: 38 RVA: 0x000039AD File Offset: 0x00001BAD
+		// Token: 0x06000026 RID: 38 RVA: 0x000039A9 File Offset: 0x00001BA9
 		private void label12_Click_1(object sender, EventArgs e)
 		{
 			this.tsForm.Show();
 		}
 
-		// Token: 0x06000027 RID: 39 RVA: 0x000039BA File Offset: 0x00001BBA
+		// Token: 0x06000027 RID: 39 RVA: 0x000039B6 File Offset: 0x00001BB6
 		private void ProcessCountBox_KeyDown(object sender, KeyEventArgs e)
 		{
 			e.SuppressKeyPress = true;
 		}
 
-		// Token: 0x06000028 RID: 40 RVA: 0x000039C3 File Offset: 0x00001BC3
+		// Token: 0x06000028 RID: 40 RVA: 0x000039BF File Offset: 0x00001BBF
 		private void threaddd_Click(object sender, EventArgs e)
 		{
 		}
 
-		// Token: 0x06000029 RID: 41 RVA: 0x000039C5 File Offset: 0x00001BC5
+		// Token: 0x06000029 RID: 41 RVA: 0x000039C1 File Offset: 0x00001BC1
 		private void label7_Click(object sender, EventArgs e)
 		{
 			Process.Start("https://cafe.naver.com/RNOCOINFAMILY");
 		}
 
-		// Token: 0x0600002A RID: 42 RVA: 0x000039D2 File Offset: 0x00001BD2
+		// Token: 0x0600002A RID: 42 RVA: 0x000039CE File Offset: 0x00001BCE
 		private void label9_Click(object sender, EventArgs e)
 		{
 		}

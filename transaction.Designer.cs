@@ -3,7 +3,7 @@
 	// Token: 0x02000005 RID: 5
 	public partial class transaction : global::System.Windows.Forms.Form
 	{
-		// Token: 0x06000033 RID: 51 RVA: 0x00004E13 File Offset: 0x00003013
+		// Token: 0x06000033 RID: 51 RVA: 0x00004E0F File Offset: 0x0000300F
 		protected override void Dispose(bool disposing)
 		{
 			if (disposing && this.components != null)
@@ -13,7 +13,7 @@
 			base.Dispose(disposing);
 		}
 
-		// Token: 0x06000034 RID: 52 RVA: 0x00004E34 File Offset: 0x00003034
+		// Token: 0x06000034 RID: 52 RVA: 0x00004E30 File Offset: 0x00003030
 		private void InitializeComponent()
 		{
 			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::coinminner.transaction));

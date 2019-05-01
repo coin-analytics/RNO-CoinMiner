@@ -7,7 +7,7 @@ namespace coinminner
 	// Token: 0x02000004 RID: 4
 	internal static class Program
 	{
-		// Token: 0x0600002D RID: 45 RVA: 0x00004D78 File Offset: 0x00002F78
+		// Token: 0x0600002D RID: 45 RVA: 0x00004D74 File Offset: 0x00002F74
 		[STAThread]
 		private static void Main()
 		{

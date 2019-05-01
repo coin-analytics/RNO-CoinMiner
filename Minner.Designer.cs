@@ -3,7 +3,7 @@
 	// Token: 0x02000003 RID: 3
 	public partial class Minner : global::System.Windows.Forms.Form
 	{
-		// Token: 0x0600002B RID: 43 RVA: 0x000039D4 File Offset: 0x00001BD4
+		// Token: 0x0600002B RID: 43 RVA: 0x000039D0 File Offset: 0x00001BD0
 		protected override void Dispose(bool disposing)
 		{
 			if (disposing && this.components != null)
@@ -13,7 +13,7 @@
 			base.Dispose(disposing);
 		}
 
-		// Token: 0x0600002C RID: 44 RVA: 0x000039F4 File Offset: 0x00001BF4
+		// Token: 0x0600002C RID: 44 RVA: 0x000039F0 File Offset: 0x00001BF0
 		private void InitializeComponent()
 		{
 			this.components = new global::System.ComponentModel.Container();
@@ -253,9 +253,9 @@
 			this.label7.Location = new global::System.Drawing.Point(584, 535);
 			this.label7.Margin = new global::System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.label7.Name = "label7";
-			this.label7.Size = new global::System.Drawing.Size(336, 35);
+			this.label7.Size = new global::System.Drawing.Size(384, 35);
 			this.label7.TabIndex = 42;
-			this.label7.Text = "알노코인 공식 카페 바로가기";
+			this.label7.Text = "RNO코인 정보공유카페 바로가기";
 			this.label7.Click += new global::System.EventHandler(this.label7_Click);
 			base.AutoScaleDimensions = new global::System.Drawing.SizeF(13f, 24f);
 			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.Font;

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{364CD4F1-C7CF-4867-80EB-61ECA4A06416}</ProjectGuid>
+    <ProjectGuid>{C07EEF40-E87B-4476-95CB-4A97ADCDEE52}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>coinminner</RootNamespace>
     <AssemblyName>rnocoinminer</AssemblyName>
@@ -34,7 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Program Files (x86)\RNO\RnoMiner(Beta)\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
